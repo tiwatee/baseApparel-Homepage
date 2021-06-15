@@ -1,0 +1,219 @@
+@font-face {
+    font-family: josefinSans;
+    src: url(./font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: josefinSans;
+    font-size: 16px;
+}
+
+.wrapper{
+    min-height: 96vh;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 20vh 76vh;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: 60vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.logo img{
+    height: 4vh;
+    margin: auto 10vw;
+    margin-top: 70px;
+}
+
+.image{
+    background-image: url(./images/hero-desktop.jpg);
+    background-size: 40vw 96vh;
+    height: 96vh;
+    width: 40vw;
+}
+.bottom{
+    margin: 20px 10vw 0;
+    width: 30vw;
+}
+span p{
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+#red{
+    color: hsl(0, 36%, 70%);
+}
+.paragraph{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    border: solid 1px hsl(0, 6%, 24%);
+    border-radius: 50px;
+    padding: 15px 30px;
+    outline: none;
+    background-color: inherit;
+}
+.input{
+    position: relative;
+}
+::placeholder{
+    color:  hsl(0, 6%, 24%);
+}
+#errorIcon{
+    display: none;
+    position: absolute;
+    right: 100px;
+    top: 18px;
+}
+button{
+    border-radius: 50px;
+    padding: 11.5px 40px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    right: -1px;
+    top:1px;
+    border: none;
+}
+button:hover{
+    background-image: linear-gradient(300deg, hsl(0, 74%, 74%),hsl(0, 0%, 100%));
+}
+button img{
+    height: 20px;
+    
+}
+#errorMsg{
+    display: none;
+    color: hsl(0, 36%, 70%);
+}
+footer{
+    height: 4vh;
+    background-color: hsl(0, 6%, 24%);
+}
+.attribution {
+    padding-top: 1vh;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: 900;
+}
+
+@media only screen and (max-width:1024px) and (orientation:landscape){
+    .wrapper{
+        display: block;
+        background-image: none;
+        background-size: unset;
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+    .logo img{
+        height: 5vh;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .image{
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: 100vw 60vh;
+        height: 60vh;
+        width: 100vw;
+    }
+    .bottom{
+        width: unset;
+        text-align: center;
+        padding-top: 25px ;
+    }
+    span p{
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing:10px;
+    }
+    input{
+        padding: 13px 30px;
+    }
+    .input{
+        padding-bottom: 20px;
+    }
+    button{
+        border-radius: 50px;
+        padding: 10px 50px;
+        background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        position: absolute;
+        right: -1px;
+        top:0px;
+        border: none;
+    }
+    #errorIcon{
+        right: 120px;
+        top: 10px;
+    }
+    footer{
+        height: 6vh;
+    }
+    .attribution {
+        font-size: 11px;
+    }
+    .attribution a{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:1024px) and (orientation:portrait) {
+    .wrapper{
+        display: block;
+        background-image: none;
+        background-size: unset;
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+    .logo img{
+        height: 2.5vh;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .image{
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: 100vw 30vh;
+        height: 30vh;
+        width: 100vw;
+    }
+    .bottom{
+        width: unset;
+        text-align: center;
+        padding-top: 25px ;
+    }
+    span p{
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing:10px;
+    }
+    input{
+        padding: 13px 30px;
+    }
+    .input{
+        padding-bottom: 10px;
+    }
+    button{
+        border-radius: 50px;
+        padding: 10px 30px;
+        background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        position: absolute;
+        right: -1px;
+        top:0px;
+        border: none;
+    }
+    #errorIcon{
+        right: 80px;
+        top: 10px;
+    }
+
+    .attribution {
+        font-size: 11px;
+    }
+    .attribution a{
+        font-size: 12px;
+    }
+}
