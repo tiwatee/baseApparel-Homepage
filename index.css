@@ -43,6 +43,11 @@
     text-transform: uppercase;
     letter-spacing: 20px;
 }
+.heading h1{
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
 #red{
     color: hsl(0, 36%, 70%);
 }
@@ -131,7 +136,12 @@ footer{
         text-align: center;
         padding-top: 25px ;
     }
-    span p{
+    .heading p{
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing:10px;
+    }
+    .heading h1{
         font-size: 2em;
         text-transform: uppercase;
         letter-spacing:10px;
@@ -188,7 +198,12 @@ footer{
         text-align: center;
         padding-top: 25px ;
     }
-    span p{
+    .heading p{
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing:10px;
+    }
+    .heading h1{
         font-size: 2em;
         text-transform: uppercase;
         letter-spacing:10px;
